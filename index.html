@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="Css/all.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+       <h1 class="text-center my-4">
+    <i class="fas fa-notes-medical text-primary"></i> Writing Prescriptions
+      </h1>
+        <form id="prescriptionForm">
+            <div class="mb-3">
+                <label for="patientName" class="form-label">اسم صاحب الحاله </label>
+                <input type="text" class="form-control" id="patientName" required>
+            </div>
+            <div class="mb-3">
+                <label for="medications" class="form-label">الأدوية</label>
+                <textarea class="form-control" id="medications" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="doctorNotes" class="form-label">ملاحظات الطبيب</label>
+                <textarea class="form-control" id="doctorNotes" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">إضافة الروشتة</button>
+        </form>
+
+        <h2 class="my-4">الروشتات المسجلة</h2>
+        <div id="prescriptionList" class="list-group"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+    <script src="js/js.js"></script>
+
+</body>
+
+</html>
